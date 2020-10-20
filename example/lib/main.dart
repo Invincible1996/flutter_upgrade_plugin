@@ -29,8 +29,9 @@ class _MyAppState extends State<MyApp> {
     try {
       await FlutterUpgradePlugin.upgrade(downloadParams: {
         "downloadUrl": "https://bigshot.oss-cn-shanghai.aliyuncs.com/app/%E5%94%AF%E5%AF%BB%E7%BD%91%E6%A0%A1.apk",
-        "description": '唯寻',
-        "title": "唯寻",
+        "description": '唯寻网校',
+        "title": "唯寻网校",
+        "appId": "com.visioneschool.flutter_upgrade_plugin_example",
       });
     } on PlatformException {
       platformVersion = 'Failed to get platform version.';

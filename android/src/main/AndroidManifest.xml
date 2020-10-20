@@ -7,8 +7,8 @@
     <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
     <application>
         <provider
-                android:name="com.visioneschool.flutter_upgrade_plugin.MyFileProvider"
-                android:authorities="${applicationId}"
+                android:name="androidx.core.content.FileProvider"
+                android:authorities="${applicationId}.fileProvider.install"
                 android:exported="false"
                 android:grantUriPermissions="true">
             <meta-data
