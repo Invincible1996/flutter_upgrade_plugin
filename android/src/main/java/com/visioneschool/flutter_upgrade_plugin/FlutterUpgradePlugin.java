@@ -200,7 +200,7 @@ public class FlutterUpgradePlugin implements FlutterPlugin, MethodCallHandler, A
                 Intent intent = new Intent(Intent.ACTION_VIEW);
                 intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                 intent.addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION);
-                Uri uri = FileProvider.getUriForFile(context, appId + ".fileProvider.install", file);
+                Uri uri = FileProvider.getUriForFile(context, appId, file);
                 intent.setDataAndType(uri, "application/vnd.android.package-archive");
                 activity.startActivity(intent);
             } else { // 未获取安装权限
